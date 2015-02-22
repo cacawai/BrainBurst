@@ -14,11 +14,11 @@
 		<string>https://github.com/cacawai/BrainBurst.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BrainBurst/BrainBurst.xcodeproj</string>
+	<string>BrainBurst.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9A60DA3B3FFC956C30FEEB422E524389448C4BD5</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/cacawai/BrainBurst.git</string>
