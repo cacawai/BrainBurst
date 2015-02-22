@@ -13,6 +13,12 @@
 		25B38D921A9A049B00DA7296 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B38D911A9A049B00DA7296 /* Images.xcassets */; };
 		25B38D951A9A049B00DA7296 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B38D931A9A049B00DA7296 /* LaunchScreen.xib */; };
 		25B38DA11A9A049C00DA7296 /* BrainBurstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B38DA01A9A049C00DA7296 /* BrainBurstTests.swift */; };
+		25B38DB31A9A070800DA7296 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B38DB21A9A070800DA7296 /* InterfaceController.swift */; };
+		25B38DB51A9A070800DA7296 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B38DB41A9A070800DA7296 /* Images.xcassets */; };
+		25B38DB91A9A070800DA7296 /* BrainBurst WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 25B38DB81A9A070800DA7296 /* BrainBurst WatchKit App.app */; };
+		25B38DC11A9A070800DA7296 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B38DBF1A9A070800DA7296 /* Interface.storyboard */; };
+		25B38DC31A9A070800DA7296 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B38DC21A9A070800DA7296 /* Images.xcassets */; };
+		25B38DC61A9A070800DA7296 /* BrainBurst WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25B38DAE1A9A070800DA7296 /* BrainBurst WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,35 @@
 			remoteGlobalIDString = 25B38D841A9A049B00DA7296;
 			remoteInfo = BrainBurst;
 		};
+		25B38DBA1A9A070800DA7296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25B38D7D1A9A049B00DA7296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B38DB71A9A070800DA7296;
+			remoteInfo = "BrainBurst WatchKit App";
+		};
+		25B38DC41A9A070800DA7296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25B38D7D1A9A049B00DA7296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B38DAD1A9A070800DA7296;
+			remoteInfo = "BrainBurst WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25B38DCD1A9A070800DA7296 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25B38DC61A9A070800DA7296 /* BrainBurst WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		25B38D851A9A049B00DA7296 /* BrainBurst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainBurst.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +70,14 @@
 		25B38D9A1A9A049B00DA7296 /* BrainBurstTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainBurstTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B38D9F1A9A049C00DA7296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25B38DA01A9A049C00DA7296 /* BrainBurstTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainBurstTests.swift; sourceTree = "<group>"; };
+		25B38DAE1A9A070800DA7296 /* BrainBurst WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BrainBurst WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B38DB11A9A070800DA7296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B38DB21A9A070800DA7296 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		25B38DB41A9A070800DA7296 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		25B38DB81A9A070800DA7296 /* BrainBurst WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BrainBurst WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B38DBE1A9A070800DA7296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B38DC01A9A070800DA7296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		25B38DC21A9A070800DA7296 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +95,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25B38DAB1A9A070800DA7296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +110,8 @@
 			children = (
 				25B38D871A9A049B00DA7296 /* BrainBurst */,
 				25B38D9D1A9A049B00DA7296 /* BrainBurstTests */,
+				25B38DAF1A9A070800DA7296 /* BrainBurst WatchKit Extension */,
+				25B38DBC1A9A070800DA7296 /* BrainBurst WatchKit App */,
 				25B38D861A9A049B00DA7296 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +121,8 @@
 			children = (
 				25B38D851A9A049B00DA7296 /* BrainBurst.app */,
 				25B38D9A1A9A049B00DA7296 /* BrainBurstTests.xctest */,
+				25B38DAE1A9A070800DA7296 /* BrainBurst WatchKit Extension.appex */,
+				25B38DB81A9A070800DA7296 /* BrainBurst WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +165,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		25B38DAF1A9A070800DA7296 /* BrainBurst WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				25B38DB21A9A070800DA7296 /* InterfaceController.swift */,
+				25B38DB41A9A070800DA7296 /* Images.xcassets */,
+				25B38DB01A9A070800DA7296 /* Supporting Files */,
+			);
+			path = "BrainBurst WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		25B38DB01A9A070800DA7296 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25B38DB11A9A070800DA7296 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25B38DBC1A9A070800DA7296 /* BrainBurst WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				25B38DBF1A9A070800DA7296 /* Interface.storyboard */,
+				25B38DC21A9A070800DA7296 /* Images.xcassets */,
+				25B38DBD1A9A070800DA7296 /* Supporting Files */,
+			);
+			path = "BrainBurst WatchKit App";
+			sourceTree = "<group>";
+		};
+		25B38DBD1A9A070800DA7296 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25B38DBE1A9A070800DA7296 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +211,12 @@
 				25B38D811A9A049B00DA7296 /* Sources */,
 				25B38D821A9A049B00DA7296 /* Frameworks */,
 				25B38D831A9A049B00DA7296 /* Resources */,
+				25B38DCD1A9A070800DA7296 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25B38DC51A9A070800DA7296 /* PBXTargetDependency */,
 			);
 			name = BrainBurst;
 			productName = BrainBurst;
@@ -150,6 +241,39 @@
 			productReference = 25B38D9A1A9A049B00DA7296 /* BrainBurstTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		25B38DAD1A9A070800DA7296 /* BrainBurst WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B38DCA1A9A070800DA7296 /* Build configuration list for PBXNativeTarget "BrainBurst WatchKit Extension" */;
+			buildPhases = (
+				25B38DAA1A9A070800DA7296 /* Sources */,
+				25B38DAB1A9A070800DA7296 /* Frameworks */,
+				25B38DAC1A9A070800DA7296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25B38DBB1A9A070800DA7296 /* PBXTargetDependency */,
+			);
+			name = "BrainBurst WatchKit Extension";
+			productName = "BrainBurst WatchKit Extension";
+			productReference = 25B38DAE1A9A070800DA7296 /* BrainBurst WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		25B38DB71A9A070800DA7296 /* BrainBurst WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B38DC71A9A070800DA7296 /* Build configuration list for PBXNativeTarget "BrainBurst WatchKit App" */;
+			buildPhases = (
+				25B38DB61A9A070800DA7296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BrainBurst WatchKit App";
+			productName = "BrainBurst WatchKit App";
+			productReference = 25B38DB81A9A070800DA7296 /* BrainBurst WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +289,12 @@
 					25B38D991A9A049B00DA7296 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 25B38D841A9A049B00DA7296;
+					};
+					25B38DAD1A9A070800DA7296 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					25B38DB71A9A070800DA7296 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +313,8 @@
 			targets = (
 				25B38D841A9A049B00DA7296 /* BrainBurst */,
 				25B38D991A9A049B00DA7296 /* BrainBurstTests */,
+				25B38DAD1A9A070800DA7296 /* BrainBurst WatchKit Extension */,
+				25B38DB71A9A070800DA7296 /* BrainBurst WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +334,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B38DAC1A9A070800DA7296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B38DB91A9A070800DA7296 /* BrainBurst WatchKit App.app in Resources */,
+				25B38DB51A9A070800DA7296 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B38DB61A9A070800DA7296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B38DC11A9A070800DA7296 /* Interface.storyboard in Resources */,
+				25B38DC31A9A070800DA7296 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +375,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25B38DAA1A9A070800DA7296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B38DB31A9A070800DA7296 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +390,16 @@
 			isa = PBXTargetDependency;
 			target = 25B38D841A9A049B00DA7296 /* BrainBurst */;
 			targetProxy = 25B38D9B1A9A049B00DA7296 /* PBXContainerItemProxy */;
+		};
+		25B38DBB1A9A070800DA7296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B38DB71A9A070800DA7296 /* BrainBurst WatchKit App */;
+			targetProxy = 25B38DBA1A9A070800DA7296 /* PBXContainerItemProxy */;
+		};
+		25B38DC51A9A070800DA7296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B38DAD1A9A070800DA7296 /* BrainBurst WatchKit Extension */;
+			targetProxy = 25B38DC41A9A070800DA7296 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +418,14 @@
 				25B38D941A9A049B00DA7296 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		25B38DBF1A9A070800DA7296 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25B38DC01A9A070800DA7296 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BrainBurst/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BrainBurst/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +566,60 @@
 			};
 			name = Release;
 		};
+		25B38DC81A9A070800DA7296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = BrainBurst_WatchKit_Extension;
+				INFOPLIST_FILE = "BrainBurst WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		25B38DC91A9A070800DA7296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = BrainBurst_WatchKit_Extension;
+				INFOPLIST_FILE = "BrainBurst WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		25B38DCB1A9A070800DA7296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BrainBurst WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		25B38DCC1A9A070800DA7296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BrainBurst WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,12 +639,30 @@
 				25B38DA61A9A049C00DA7296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25B38DA71A9A049C00DA7296 /* Build configuration list for PBXNativeTarget "BrainBurstTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25B38DA81A9A049C00DA7296 /* Debug */,
 				25B38DA91A9A049C00DA7296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B38DC71A9A070800DA7296 /* Build configuration list for PBXNativeTarget "BrainBurst WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B38DC81A9A070800DA7296 /* Debug */,
+				25B38DC91A9A070800DA7296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		25B38DCA1A9A070800DA7296 /* Build configuration list for PBXNativeTarget "BrainBurst WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B38DCB1A9A070800DA7296 /* Debug */,
+				25B38DCC1A9A070800DA7296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

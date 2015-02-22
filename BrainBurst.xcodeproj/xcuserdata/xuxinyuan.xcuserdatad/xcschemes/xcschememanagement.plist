@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BrainBurst WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>BrainBurst.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>25B38D991A9A049B00DA7296</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>25B38DB71A9A070800DA7296</key>
 		<dict>
 			<key>primary</key>
 			<true/>
