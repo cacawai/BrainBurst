@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  BrainBurst WatchKit Extension
+//  StartIC.swift
+//  BrainBurst
 //
-//  Created by xuxinyuan on 2/22/15.
+//  Created by xuxinyuan on 2/24/15.
 //  Copyright (c) 2015 Last4. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class StartIC: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -28,4 +28,15 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func onStartBtnClick() {
+        NSLog("onStartBtnClick", self)
+    }
+    
+    @IBAction func onRanksBtnClick() {
+        WKInterfaceController.openParentApplication(["rank":"1"], reply: { (reply, error) -> Void in
+            if ((error) != nil) {
+                NSLog("error = %@", error)
+            }
+        })
+    }
 }
