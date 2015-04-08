@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6750" systemVersion="14D72i" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wWN-Ds-xby">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14D130a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wWN-Ds-xby">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
@@ -24,8 +24,11 @@
                                 <segue destination="NbF-Of-iGM" kind="modal" id="1Ti-dl-0zd"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="center" verticalAlignment="center" title="3 - ???" id="GIm-Ef-7aE">
+                        <button width="1" alignment="center" verticalAlignment="center" title="3 - Quick Guess" id="GIm-Ef-7aE">
                             <fontDescription key="font" type="system" pointSize="15"/>
+                            <connections>
+                                <segue destination="q9c-nf-3Xx" kind="modal" id="IsB-JQ-afP"/>
+                            </connections>
                         </button>
                         <button width="1" alignment="center" verticalAlignment="center" title="Ranks" id="4WD-Ay-Crz">
                             <fontDescription key="font" type="system" pointSize="15"/>
@@ -66,20 +69,67 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="437" y="7"/>
+            <point key="canvasLocation" x="437" y="27"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Scene Touch-->
         <scene sceneID="bB6-Le-sx0">
             <objects>
-                <controller id="NbF-Of-iGM">
+                <controller id="NbF-Of-iGM" customClass="SceneTouch" customModule="BrainBurst_WatchKit_Extension">
                     <items>
-                        <label width="1" height="1" alignment="center" verticalAlignment="center" text="Touch" textAlignment="center" id="Z2S-WP-ra1">
-                            <fontDescription key="font" type="system" pointSize="28"/>
-                        </label>
+                        <button width="1" height="1" alignment="center" verticalAlignment="center" title="Ready" id="xWX-F3-M5C">
+                            <fontDescription key="font" type="system" pointSize="42"/>
+                            <connections>
+                                <action selector="onTouched" destination="NbF-Of-iGM" id="D8r-fM-Irb"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="tapBtn" destination="xWX-F3-M5C" id="q4U-KB-L5j"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="437" y="243"/>
+        </scene>
+        <!--Scene Guess-->
+        <scene sceneID="r96-qf-0jK">
+            <objects>
+                <controller id="q9c-nf-3Xx" customClass="SceneGuess" customModule="BrainBurst_WatchKit_Extension">
+                    <items>
+                        <slider width="1" height="0.20000000000000001" alignment="left" maximum="9" steps="9" id="e7M-fQ-VmM" userLabel="Slider1">
+                            <connections>
+                                <action selector="valueChanged1:" destination="q9c-nf-3Xx" id="jS9-5z-ADY"/>
+                            </connections>
+                        </slider>
+                        <slider width="1" height="0.20000000000000001" alignment="left" maximum="9" steps="9" id="nvU-Oc-PIl" userLabel="Slider2">
+                            <connections>
+                                <action selector="valueChanged2:" destination="q9c-nf-3Xx" id="ChK-Fj-M6E"/>
+                            </connections>
+                        </slider>
+                        <slider width="1" height="0.20000000000000001" alignment="left" maximum="9" steps="9" id="D7a-n0-7W8" userLabel="Slider3">
+                            <connections>
+                                <action selector="valueChanged3:" destination="q9c-nf-3Xx" id="DS5-QA-OCA"/>
+                            </connections>
+                        </slider>
+                        <slider width="1" height="0.20000000000000001" alignment="left" maximum="9" steps="9" id="21f-9J-S6b" userLabel="Slider4">
+                            <connections>
+                                <action selector="valueChanged4:" destination="q9c-nf-3Xx" id="Bb6-Ir-58X"/>
+                            </connections>
+                        </slider>
+                        <button width="1" height="0.20000000000000001" alignment="left" title="Guess" id="ZmB-SI-g3f">
+                            <connections>
+                                <action selector="guess" destination="q9c-nf-3Xx" id="eYG-L9-BzH"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="slider1" destination="e7M-fQ-VmM" id="6y5-qO-zzn"/>
+                        <outlet property="slider2" destination="nvU-Oc-PIl" id="M6d-O9-xKX"/>
+                        <outlet property="slider3" destination="D7a-n0-7W8" id="Fx2-fz-JJh"/>
+                        <outlet property="slider4" destination="21f-9J-S6b" id="JV4-V3-Swf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="437" y="457.00000100582838"/>
         </scene>
     </scenes>
 </document>

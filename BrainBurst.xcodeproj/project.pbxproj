@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2584FF271AC83BD6007C90F9 /* SceneTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584FF261AC83BD6007C90F9 /* SceneTouch.swift */; };
 		25B38D8B1A9A049B00DA7296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B38D8A1A9A049B00DA7296 /* AppDelegate.swift */; };
 		25B38D8D1A9A049B00DA7296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B38D8C1A9A049B00DA7296 /* ViewController.swift */; };
 		25B38D901A9A049B00DA7296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B38D8E1A9A049B00DA7296 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 		25B38DD11A9C41DB00DA7296 /* StartIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B38DD01A9C41DB00DA7296 /* StartIC.swift */; };
 		25B38DD41A9C49F500DA7296 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B38DD21A9C49F500DA7296 /* Interface.storyboard */; };
 		25B38DD61A9C4EFD00DA7296 /* SceneNumberGameIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B38DD51A9C4EFD00DA7296 /* SceneNumberGameIC.swift */; };
+		25BAB1421AD428AA00D084AA /* SceneGuess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAB1411AD428AA00D084AA /* SceneGuess.swift */; };
+		25BD5E8A1AA8B2F600AFF21B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BD5E891AA8B2F600AFF21B /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2584FF261AC83BD6007C90F9 /* SceneTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTouch.swift; sourceTree = "<group>"; };
 		25B38D851A9A049B00DA7296 /* BrainBurst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainBurst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B38D891A9A049B00DA7296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25B38D8A1A9A049B00DA7296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		25B38DD01A9C41DB00DA7296 /* StartIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartIC.swift; sourceTree = "<group>"; };
 		25B38DD31A9C49F500DA7296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		25B38DD51A9C4EFD00DA7296 /* SceneNumberGameIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneNumberGameIC.swift; sourceTree = "<group>"; };
+		25BAB1411AD428AA00D084AA /* SceneGuess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneGuess.swift; sourceTree = "<group>"; };
+		25BD5E891AA8B2F600AFF21B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BD5E8A1AA8B2F600AFF21B /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +117,7 @@
 		25B38D7C1A9A049B00DA7296 = {
 			isa = PBXGroup;
 			children = (
+				25BD5E891AA8B2F600AFF21B /* GameKit.framework */,
 				25B38D871A9A049B00DA7296 /* BrainBurst */,
 				25B38D9D1A9A049B00DA7296 /* BrainBurstTests */,
 				25B38DAF1A9A070800DA7296 /* BrainBurst WatchKit Extension */,
@@ -172,6 +180,8 @@
 			children = (
 				25B38DD01A9C41DB00DA7296 /* StartIC.swift */,
 				25B38DD51A9C4EFD00DA7296 /* SceneNumberGameIC.swift */,
+				2584FF261AC83BD6007C90F9 /* SceneTouch.swift */,
+				25BAB1411AD428AA00D084AA /* SceneGuess.swift */,
 				25B38DB41A9A070800DA7296 /* Images.xcassets */,
 				25B38DB01A9A070800DA7296 /* Supporting Files */,
 			);
@@ -288,6 +298,12 @@
 				TargetAttributes = {
 					25B38D841A9A049B00DA7296 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2MGFD5R2T3;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					25B38D991A9A049B00DA7296 = {
 						CreatedOnToolsVersion = 6.2;
@@ -295,9 +311,11 @@
 					};
 					25B38DAD1A9A070800DA7296 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2MGFD5R2T3;
 					};
 					25B38DB71A9A070800DA7296 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2MGFD5R2T3;
 					};
 				};
 			};
@@ -382,8 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BAB1421AD428AA00D084AA /* SceneGuess.swift in Sources */,
 				25B38DD11A9C41DB00DA7296 /* StartIC.swift in Sources */,
 				25B38DD61A9C4EFD00DA7296 /* SceneNumberGameIC.swift in Sources */,
+				2584FF271AC83BD6007C90F9 /* SceneTouch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,10 +538,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BrainBurst/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -529,10 +552,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BrainBurst/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -574,6 +600,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -581,6 +609,7 @@
 				IBSC_MODULE = BrainBurst_WatchKit_Extension;
 				INFOPLIST_FILE = "BrainBurst WatchKit App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -591,9 +620,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				IBSC_MODULE = BrainBurst_WatchKit_Extension;
 				INFOPLIST_FILE = "BrainBurst WatchKit App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -603,6 +635,8 @@
 		25B38DCB1A9A070800DA7296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -610,6 +644,7 @@
 				INFOPLIST_FILE = "BrainBurst WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -617,9 +652,12 @@
 		25B38DCC1A9A070800DA7296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "BrainBurst WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -661,6 +699,7 @@
 				25B38DC91A9A070800DA7296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25B38DCA1A9A070800DA7296 /* Build configuration list for PBXNativeTarget "BrainBurst WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +708,7 @@
 				25B38DCC1A9A070800DA7296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
