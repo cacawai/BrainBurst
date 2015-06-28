@@ -49,7 +49,7 @@ class SceneGuess: WKInterfaceController {
         resultNumber3 = Int(arc4random_uniform(10))
         resultNumber4 = Int(arc4random_uniform(10))
         checkAnswer()
-        println("\(resultNumber1) \(resultNumber2) \(resultNumber3) \(resultNumber4)")
+        print("\(resultNumber1) \(resultNumber2) \(resultNumber3) \(resultNumber4)")
     }
     
     func checkAnswer() {

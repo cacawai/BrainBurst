@@ -35,7 +35,7 @@ class StartIC: WKInterfaceController {
     @IBAction func onRanksBtnClick() {
         WKInterfaceController.openParentApplication(["rank":"1"], reply: { (reply, error) -> Void in
             if ((error) != nil) {
-                NSLog("error = %@", error)
+                NSLog("error = %@", error!)
             }
         })
     }

@@ -60,8 +60,8 @@ class SceneNumberGameIC: WKInterfaceController {
     
     func generateNumbers()
     {
-        var yesOrNo = Int(arc4random_uniform(2))
-        var randomSymbolIndex = generateRandomSymbolIndex()
+        let yesOrNo = Int(arc4random_uniform(2))
+        let randomSymbolIndex = generateRandomSymbolIndex()
         firstNumber = Int(arc4random_uniform(10))
         secondNumber = Int(arc4random_uniform(10))
         correctResult = generateAnswer(randomSymbolIndex)
@@ -71,7 +71,7 @@ class SceneNumberGameIC: WKInterfaceController {
             displayResult = correctResult - Int(arc4random_uniform(2))
         }
         
-        var finalString:String? = "\(firstNumber)\(symbols[randomSymbolIndex])\(secondNumber)=\(displayResult)"
+        let finalString:String? = "\(firstNumber)\(symbols[randomSymbolIndex])\(secondNumber)=\(displayResult)"
         numLabel.setText(finalString)
     }
     
@@ -104,7 +104,7 @@ class SceneNumberGameIC: WKInterfaceController {
         currentIndex++;
         if(currentIndex >= 10){
             timeCost = NSDate().timeIntervalSince1970 - timeCost
-            var timeCostString = String(format: "%.3f", timeCost)
+            let timeCostString = String(format: "%.3f", timeCost)
             numLabel.setText("\(correctAnswerCount)/10 Correct!\nCost \(timeCostString)s")
             yesBtn.setTitle("Again")
             noBtn.setTitle("Exit")

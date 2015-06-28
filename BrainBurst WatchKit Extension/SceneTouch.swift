@@ -19,7 +19,7 @@ class SceneTouch: WKInterfaceController {
         willSet(newValue) {
             if newValue {
                 tapBtn.setTitle("Ready")
-                var sec = Double(arc4random_uniform(30))/10.0
+                let sec = Double(arc4random_uniform(30))/10.0
                 timer = NSTimer.scheduledTimerWithTimeInterval(sec, target: self, selector: "updateTimer:", userInfo: nil, repeats: false)
             } else {
                 timer?.invalidate()
@@ -61,8 +61,8 @@ class SceneTouch: WKInterfaceController {
             isCounting = true
             return
         }
-        var timeCost:NSTimeInterval = NSDate().timeIntervalSinceDate(currentDate!)
-        var timeCostString = String(format: "%.3f", timeCost)
+        let timeCost:NSTimeInterval = NSDate().timeIntervalSinceDate(currentDate!)
+        let timeCostString = String(format: "%.3f", timeCost)
         self.tapBtn.setTitle("\(timeCostString)s")
         isWaitingForTap = false
         currentDate = nil
@@ -70,7 +70,7 @@ class SceneTouch: WKInterfaceController {
     }
     
     func updateTimer(timer: NSTimer) {
-        println("Tap!")
+        print("Tap!")
         self.tapBtn.setTitle("Tap!")
         currentDate = NSDate()
         isWaitingForTap = true
